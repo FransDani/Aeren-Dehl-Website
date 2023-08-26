@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Aeren Dehl's Love Website</title>
+  <style>
+    /* Your existing CSS styles */
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #f9f5ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #98fb98;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .section {
+      background-color: #ffcccb;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #ffc0cb;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Additional CSS for the button */
+    .btn {
+      background-color: #ffc0cb;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  </style>
+  <script>
+    // JavaScript code here
+    function changeBackgroundColor() {
+      const colors = ["#FFC0CB", "#98FB98", "#FFDAB9", "#E6E6FA"];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+
+    function showAlert() {
+      alert("Feel free to contact me via Gcash! 🥺🥺🥺");
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Aeren Dehl's Love Website!💘💘💘💘</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#what">What will you find about me</a></li>
+      <li><a href="#contact">How to contact me</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="section" style="text-align: center;">
+      <h2>About Me</h2>
+      <p>I'm a pan! ☆*: .｡. o(≧▽≦)o .｡.:*☆</p>
+    </section>
+
+    <section id="what" class="section" style="text-align: left;">
+      <!-- Center this section -->
+      <h2>What will you find about me</h2>
+      <ul>
+        <li>Cuteness Overload</li>
+        <li>Sweet and Caring BF</li>
+        <li>Cuddles everytime you're sad</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section" style="text-align: center;">
+      <h2>How to contact me</h2>
+      <p>Send Gcash pweaaase <a href="#" onclick="showAlert()">09168486271 🥺🥺🥺</a></p>
+      <button class="btn" onclick="changeBackgroundColor()">Change Background Color</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; All my love for you 💘</p>
+  </footer>
+</body>
+
+</html>
