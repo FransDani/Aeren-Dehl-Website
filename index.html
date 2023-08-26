@@ -48,13 +48,9 @@
       margin-bottom: 20px;
     }
 
-    footer {
-      background-color: #ffc0cb;
-      padding: 10px;
+    /* Center align the header in the section with id "what" */
+    #what h2 {
       text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
     }
 
     /* Additional CSS for the button */
@@ -70,6 +66,23 @@
       margin: 10px;
       cursor: pointer;
       border-radius: 10px;
+    }
+
+    /* Align specific list items to the center-right */
+    #what ul {
+      text-align: right;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; /* Enable wrapping for smaller screens */
+      margin-right: -15px; /* Compensate for the negative margins below */
+    }
+
+    #what ul li {
+      text-align: left;
+      margin-right: 15px;
+      margin-bottom: 10px; /* Add bottom margin for spacing */
+      flex-basis: calc(33.33% - 15px); /* Distribute evenly across three columns */
+      box-sizing: border-box; /* Include padding and border in width */
     }
   </style>
   <script>
@@ -113,6 +126,10 @@
         <li>Cuteness Overload</li>
         <li>Sweet and Caring BF</li>
         <li>Cuddles everytime you're sad</li>
+        <!-- Align these list items to the center-right -->
+        <li>Love you forever</li>
+        <li>Genuine feelings</li>
+        <li>Loyal dog</li>
       </ul>
     </section>
 
@@ -124,7 +141,9 @@
   </main>
 
   <footer>
+  <section class="section" style="text-align: center;">
     <p>&copy; All my love for you 💘</p>
+	</section>
   </footer>
 </body>
 
